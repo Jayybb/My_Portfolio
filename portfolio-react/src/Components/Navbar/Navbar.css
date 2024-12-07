@@ -1,0 +1,133 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #060414; /* Background color for navbar */
+  position: relative;
+}
+
+.navbar img {
+  height: 40px; /* Adjust logo size */
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li p {
+  color: #fdeeee;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.nav-menu li:hover p {
+  color: #00ccf0dc; /* Change text color on hover */
+}
+
+.anchor-link {
+  text-decoration: none;
+}
+
+.nav-connect {
+  color: #eae2f7;
+  font-size: 14px;
+  background-color: #deedf3f5;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.nav-connect:hover {
+  background-color: #ebecf5e5;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 0;
+    right: -350px;
+    background-color: #333333;
+    width: 300px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-top: 80px;
+    transition: right 0.3s ease;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu li p {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+
+  .nav-mob-close {
+    display: block;
+  }
+
+  .navbar img:nth-child(2) {
+    display: block;
+  }
+
+  .nav-connect {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 25px;
+  }
+
+  /* Menu icon size adjustment */
+  .menu-icon {
+    width: 30px; /* Set the width of the menu icon */
+    height: 30px; /* Set the height of the menu icon */
+    cursor: pointer; /* Ensure the icon is clickable */
+  }
+}
+
+/* Hide menu icons on desktop (above 768px) */
+@media (min-width: 769px) {
+  .navbar img:nth-child(2), /* menu_open */
+  .nav-mob-close { /* menu_close */
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+

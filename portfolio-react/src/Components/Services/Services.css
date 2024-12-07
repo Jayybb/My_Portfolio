@@ -1,0 +1,90 @@
+/* Services.css */
+
+.services {
+  padding: 3rem;
+  background-color: #101820; /* Dark background */
+  color: #fff;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-title h1 {
+  font-size: 3rem;
+  color: #a1c4e8; /* Light blue */
+  font-weight: bold;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid with flexible columns */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-box {
+  background-color: #1a1a2e; /* Dark background for the box */
+  padding: 2rem;
+  border: 2px solid #a1c4e8; /* Border for the box */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px; /* Set fixed height to make it square */
+  text-align: center;
+}
+
+.service-box:hover {
+  transform: translateY(-10px) scale(1.05); /* Transforms to lift the box and slightly scale it */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); /* Stronger shadow for hover */
+}
+
+.service-box h3 {
+  font-size: 2rem;
+  color: #e94560; /* Accent color for the number */
+  margin-bottom: 1rem;
+}
+
+.service-box h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.service-box p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.services-readmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a1c4e8;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.services-readmore img {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+/* Responsive Design: Stack the boxes vertically on smaller screens */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+  
