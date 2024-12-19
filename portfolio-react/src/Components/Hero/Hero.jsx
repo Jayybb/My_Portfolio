@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div id='home' className='hero'>
         <img src={John_profile} alt='John profile' />
-        <h1>I'm John Inyang, fullstack developer based in USA.</h1>
+        <h1>I'm John Inyang, fullstack web developer.</h1>
         <p>I’m a pharmacist and web developer passionate about merging healthcare and technology. With experience in pharmaceuticals, research, and coding, I create innovative solutions to make an impact. Explore my work and let’s collaborate!</p>
         <div className='hero-action'>
             <div className='hero-connect'>
