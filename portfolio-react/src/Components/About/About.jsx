@@ -44,6 +44,14 @@ const About = () => {
                         <p>MONGO DB & TAILWIND</p>
                         <hr style={{width:'70%'}}/>
                     </div>
+                    <div className='about-skill'>
+                        <p>NEXT JS</p>
+                        <hr style={{width:'70%'}}/>
+                    </div>
+                    <div className='about-skill'>
+                        <p>DOCKER</p>
+                        <hr style={{width:'60%'}}/>
+                    </div>
 
                 </div>
             </div>

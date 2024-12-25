@@ -32,7 +32,7 @@ const Contact = () => {
             </div>
             <div className="contact-detail">
               <img src={call_icon} alt='' />
-              <p>+2347042035690</p>
+              <p>415-XXX-XXX</p>
             </div>
           </div>
         </div>
